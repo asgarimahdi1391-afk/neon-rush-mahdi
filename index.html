@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neon Rush — Mahdi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <p class="eyebrow">ARCADE GAME</p>
+        <h1>NEON <span>RUSH</span></h1>
+        <p class="sub">ساخته‌شده برای مهدی ⚡</p>
+      </div>
+      <div class="scorebox">
+        <small>امتیاز</small>
+        <strong id="score">0</strong>
+      </div>
+    </header>
+    <section class="game-shell">
+      <canvas id="game" width="900" height="560" aria-label="بازی نئون راش"></canvas>
+      <div class="overlay" id="overlay">
+        <div class="panel">
+          <div class="bolt">⚡</div>
+          <h2 id="overlayTitle">آماده‌ای؟</h2>
+          <p id="overlayText">گوی‌های نورانی را بگیر و از دشمن‌ها دوری کن!</p>
+          <button id="startBtn">شروع بازی</button>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div><b>حرکت</b><span>کلیدهای WASD یا جهت‌ها</span></div>
+      <div><b>شتاب</b><span>Shift</span></div>
+      <div><b>هدف</b><span>گوی‌ها را بگیر و زنده بمان</span></div>
+    </section>
+    <p class="mobile-help">در گوشی: انگشتت را روی صفحه بکش تا بازیکن حرکت کند.</p>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

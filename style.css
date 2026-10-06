@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Vazirmatn:wght@400;600;800&display=swap');
+:root{color-scheme:dark;--cyan:#36f5ff;--pink:#ff3eaa;--bg:#070817}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,#1b1741 0%,#090a1d 50%,#050611 100%);color:#f5f7ff;font-family:Vazirmatn,Arial,sans-serif;padding:24px}
+.wrap{max-width:1000px;margin:auto}
+header{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:0 0 18px}
+.eyebrow{font:700 11px Orbitron,sans-serif;letter-spacing:4px;color:var(--cyan);margin:0}
+h1{font:900 clamp(32px,7vw,58px) Orbitron,sans-serif;letter-spacing:2px;margin:5px 0;line-height:1}
+h1 span{color:var(--pink);text-shadow:0 0 22px #ff3eaa88}
+.sub{color:#aeb4d6;margin:9px 0 0}
+.scorebox{border:1px solid #36f5ff66;border-radius:16px;padding:10px 20px;text-align:center;background:#10162a99;min-width:100px;box-shadow:0 0 25px #36f5ff12}
+.scorebox small{display:block;color:#9da7ca;font-size:12px}
+.scorebox strong{font:700 30px Orbitron,sans-serif;color:var(--cyan)}
+.game-shell{position:relative;border:1px solid #36f5ff77;border-radius:18px;overflow:hidden;background:#080b1c;box-shadow:0 0 35px #36f5ff1b,0 0 80px #ff3eaa0b}
+canvas{display:block;width:100%;height:auto;touch-action:none}
+.overlay{position:absolute;inset:0;display:grid;place-items:center;background:#070817aa;backdrop-filter:blur(5px)}
+.overlay.hidden{display:none}
+.panel{text-align:center;padding:28px;max-width:440px}
+.bolt{font-size:42px;color:var(--cyan);filter:drop-shadow(0 0 14px var(--cyan))}
+.panel h2{font-size:clamp(24px,4vw,38px);margin:8px 0}
+.panel p{color:#c4c9e7;line-height:1.9}
+button{border:0;border-radius:12px;padding:13px 30px;background:linear-gradient(100deg,var(--cyan),#a4fbff);color:#07101b;font:800 16px Vazirmatn,Arial;cursor:pointer;box-shadow:0 0 25px #36f5ff44}
+button:hover{transform:translateY(-1px);filter:brightness(1.08)}
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.info div{border:1px solid #ffffff18;background:#11152a99;border-radius:12px;padding:12px 15px}
+.info b,.info span{display:block}.info b{color:var(--cyan);margin-bottom:4px}.info span{font-size:13px;color:#c0c6e2}
+.mobile-help{text-align:center;color:#aab2d7;font-size:13px}
+@media(max-width:600px){body{padding:12px}header{align-items:flex-start}.scorebox{padding:8px 13px;min-width:78px} .info{grid-template-columns:1fr}.info div{display:flex;justify-content:space-between;gap:10px}.info b{margin:0}.info span{text-align:left}}
